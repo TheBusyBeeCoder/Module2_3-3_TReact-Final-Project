@@ -43,6 +43,19 @@ section {
   margin: 0 auto;
 }
 
+.btn {
+  padding: 12px 32px;
+  border: none;
+  border-radius: 500px;
+  color: #fff;
+  background-color: #6415ff;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 8px;
+  transition: all 300 ms ease;
+  cursor: pointer;
+}
+
 /*
 
 NAVIGATION
@@ -163,19 +176,12 @@ HEADER
 
 */
 
-header.container {
-  padding: 96px 0;
-}
-
 header .row {
   display: flex;
 }
 
 .header__description {
   width: 40%;
-}
-
-h1 {
 }
 
 .header__description--para {
@@ -261,10 +267,6 @@ main {
   position: relative;
 }
 
-.container {
-  padding: 96px 0;
-}
-
 .row__narrow {
   display: flex;
   flex-direction: column;
@@ -288,7 +290,6 @@ main {
 }
 
 .section__para {
-  max-width: 576px;
   font-size: 18px;
   font-weight: 500;
   color: #7c8ba1;
@@ -359,12 +360,129 @@ QUALITY
   position: relative;
   margin: 0 56px;
   z-index: 2;
-  display: flex;  
+  display: flex;
+  max-width: 600px;
 }
 
 .quality__img {
+  width: 100%;
   z-index: 1;
 }
+
+.quality__grid {
+  transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  fill: rgb(100, 21, 255);
+  --tw-text-opacity: 1;
+  color: rgba(100, 21, 255, var(--tw-text-opacity));
+  z-index: 0;
+  display: block;
+}
+
+#quality .btn {
+  margin-top: 32px;
+}
+
+/*
+
+STEPS
+
+*/
+
+#steps .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.steps__img--wrapper {
+  position: relative;
+  display: flex;
+  width: 50%;
+}
+
+.steps__img {
+  width: 100%;
+}
+
+.steps__description {
+  padding: 32px 0;
+  padding-left: 64px;
+  width: 50%;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 32px;
+}
+
+.step__number {
+  color: #cbd5e0;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.step__description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  max-width: 320px;
+}
+
+.step__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #243e63;
+  line-height: 1;
+}
+
+.step__para {
+  font-size: 14px;
+  font-weight: 500;
+  color: #718096;
+  line-height: 2;
+  margin-top: 12px;
+}
+
+/*
+
+VALUES
+
+*/
+
+#values .row {
+  display: flex;
+  flex-direction: space-between;
+  align-items: center;
+}
+
+.values__description {
+  width: 50%;
+  padding: 32px 64px 32px 0;
+}
+
+#values .section__title {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  line-height: 1.25px;
+}
+
+.value__img--wrapper {
+  width: 50%;
+}
+
+.value__img {
+  width: 100%;
+}
+
+
+
 
 /* COMPUTER SCREEN */
 @media (max-width: 1280px) {
