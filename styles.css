@@ -875,7 +875,7 @@ START
   justify-content: center;
   padding: 96px 0;
   width: 100%;
-  color: rgb(100, 21, 255);
+  background-color: rgb(100, 21, 255);
   border-radius: 8px;
 }
 
@@ -930,6 +930,24 @@ START
   border: 1px solid rgb(160, 174, 192);
   transition: all 300ms ease;
 }
+
+
+/*(
+
+FOOTER
+
+*/ 
+
+
+.footer {
+  padding: 96px 32px;
+  background
+}
+
+
+
+
+
 
 /* COMPUTER SCREEN */
 @media (max-width: 1280px) {
