@@ -38,6 +38,15 @@ body {
   overflow-x: hidden;
 }
 
+.section__title {
+  font-size: 48px;
+  font-weight: 900;
+  color: rgb(36, 62, 99);
+  line-height: 1.5;
+  margin: 16px 0;
+  letter-spacing: 0.025em;
+}
+
 .purple {
   color: #6415ff;
 }
@@ -566,6 +575,10 @@ STEPS
   max-width: 320px;
 }
 
+#steps .section__title {
+  text-align: left;
+}
+
 .step__title {
   font-size: 20px;
   font-weight: 600;
@@ -596,6 +609,7 @@ VALUES
   margin-top: 16px;
   margin-bottom: 32px;
   line-height: 1.25;
+  text-align: left;
 }
 
 .values__list {
@@ -623,6 +637,14 @@ VALUES
   align-items: center;
   width: 36px;
   height: 36px;
+}
+
+.value:nth-child(1) .fa-solid {
+  color: rgb(39, 103, 73);
+}
+
+.value:nth-child(2) .fa-solid {
+  color: rgb(155, 44, 44);
 }
 
 .value:nth-child(1) .value__img--wrapper {
@@ -681,15 +703,6 @@ PRICING
   color: #6415ff;
   letter-spacing: 1.6px;
   font-weight: 700;
-}
-
-.section__title {
-  font-size: 48px;
-  font-weight: 900;
-  color: rgb(36, 62, 99);
-  line-height: 1.5;
-  margin: 16px 0;
-  letter-spacing: 0.025em;
 }
 
 #pricing .section__para {
@@ -923,6 +936,7 @@ PRICING
 #testimonials .section__title {
   margin-bottom: 24px;
   line-height: 1.25;
+  text-align: left;
 }
 
 .section__para {
@@ -1376,6 +1390,16 @@ footer {
     display: none;
   }
 
+  #features .section__title,
+  #pricing .section__title,
+  #values .section__title,
+  #steps .section__title,
+  #quality .section__title,
+  #testimonials .section__title {
+    font-size: 36px;
+    text-align: center;
+  }
+  
   .features {
     justify-content: center;
   }
@@ -1454,7 +1478,7 @@ footer {
     padding-left: 0;
   }
 
-  .footer__columns {
+  .footer__columns {    
     justify-content: flex-start;
   }
 
@@ -1525,16 +1549,6 @@ footer {
     line-height: 2;
   }
 
-  #features .section__title,
-  #pricing .section__title,
-  #values .section__title {
-    font-size: 36px;
-  }
-
-  #quality .section__title {
-    text-align: center;
-  }
-
   .plan__price {
     font-size: 36px;
   }
@@ -1601,6 +1615,12 @@ footer {
     padding: 0 16px;
     text-align: center;
     align-items: center;
+  }
+
+  .footer__copyright {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5;
   }
 }
 
