@@ -1490,6 +1490,15 @@ footer {
     font-size: 36px;
   }
 
+  .plan__price {
+    font-size: 36px;
+  }
+
+  .plan__btn {
+    font-size: 14px;
+    padding: 12px 12px;
+  }
+
   .section__title {
     line-height: 1.25;
   }
